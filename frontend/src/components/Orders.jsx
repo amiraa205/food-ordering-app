@@ -7,7 +7,8 @@ function Orders() {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    axios.get(`${API_URL}/api/orders`)
+    axios
+      .get(`${API_URL}/api/orders`)
 
       .then((res) => {
         setOrders(res.data);

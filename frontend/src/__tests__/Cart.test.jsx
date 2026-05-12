@@ -12,7 +12,6 @@ test('shows item and total when cart has items', () => {
   render(<Cart cart={cart} setCart={() => {}} setActiveTab={() => {}} />);
   expect(screen.getByText(/burger/i)).toBeInTheDocument();
   expect(screen.getAllByText(/100 EGP/i).length).toBeGreaterThan(0);
-
 });
 
 test('renders place order button', () => {

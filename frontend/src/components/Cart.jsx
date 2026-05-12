@@ -7,7 +7,8 @@ function Cart({ cart, setCart, setActiveTab }) {
   const placeOrder = () => {
     if (cart.length === 0) return;
 
-    axios.post(`${API_URL}/api/orders`, { items: cart, total })
+    axios
+      .post(`${API_URL}/api/orders`, { items: cart, total })
 
       .then(() => {
         setCart([]);

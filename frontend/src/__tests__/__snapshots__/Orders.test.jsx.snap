@@ -1,0 +1,11 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`matches snapshot when empty 1`] = `
+<div>
+  <p
+    style="text-align: center;"
+  >
+    No orders yet 📋
+  </p>
+</div>
+`;
